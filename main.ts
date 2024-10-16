@@ -1,2 +1,2 @@
 spikerbit.startMuscleRecording()
-spikerbit.print(SignalShape.DEFAULT)
+spikerbit.print(SignalShape.CONTROL)

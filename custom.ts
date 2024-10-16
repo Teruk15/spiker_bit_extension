@@ -426,7 +426,8 @@ namespace spikerbit {
         }
         // Optional: show serial output as long as duration
         else {
-            let debug_count = 0;
+            // For debugging
+            //let debug_count = 0;
             startTime = control.millis();
             while (control.millis() - startTime < duration) {
                 if (shape == SignalShape.CONTROL) {
@@ -440,6 +441,7 @@ namespace spikerbit {
                     serial.writeValue(signal_label, signal());
                 }
             }
+            // For debugging
             // basic.showNumber(debug_count);
             // ~350
         }
